@@ -5,16 +5,16 @@ int main(void)
 {
 
   PWM_GPIO_Init();
-	PWM_Init();
+  PWM_Init();
 
   while (1)
   {
 		
-		for(int i=500; i<2000; i=i+100)
-		{
-			TIM2->CCR1 = i;
-			delay_ms(200);
-		}
+	for(int i=500; i<2000; i=i+100)
+	{
+		TIM2->CCR1 = i;
+		delay_ms(200);
+	}
 
   }
 
