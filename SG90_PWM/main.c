@@ -13,7 +13,7 @@ int main(void)
 	for(int i=500; i<2000; i=i+100)
 	{
 		TIM2->CCR1 = i;
-		delay_ms(200);
+		delay_ms(200);		//using increment in 1ms configured SysTick_Handler 
 	}
 
   }
