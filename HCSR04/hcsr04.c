@@ -34,7 +34,7 @@ uint16_t read_distance(void)
 	while ( ((GPIOA->IDR) & (1<<2)) )
 	{
 		time++;
-		wait_us(75);
+		wait_us(1);
 	}
 
 	return time;
